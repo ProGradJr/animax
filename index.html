@@ -10,78 +10,73 @@
 
 <body>
     <header>
-        <nav>
-            <div id="logo"><img src="http://i1.faceprep.in/prograd-junior/animax-logo.png" alt=""></div>
+        <nav class="flex-container">
+            <div id="logo"><img src="http://i1.faceprep.in/prograd-junior/animax-logo.png" alt="logo-image"></div>
             <div class="button">
-                <a href="#footer">
+                <a target="blank" href="https://github.com/ProGradJr">
                     <p><b>Who Built This?</b></p>
                 </a>
             </div>
         </nav>
-        <div>
-            <h1>My all time favorite <br> animated movies.</h1><br>
-            <p>Scroll down and click to <br>
-                watch my fav anime movies</p> <br><br>
-            <img id="scroll" src="http://i1.faceprep.in/prograd-junior/scroll-down-icon.png" alt="">
+        <div id="header-text" class="flex-column">
+            <h1>My all time favorite animated movies.</h1>
+            <p>Scroll down and click to watch my fav anime movies</p>
+            <img id="scroll" src="http://i1.faceprep.in/prograd-junior/scroll-down-icon.png" alt="scroll-image">
         </div>
     </header>
     <div class="container">
-        <div id="frozen" class="movie-container">
-
-            <div>
+        <div class="flex-container movies wrap-reverse">
+            <div class="movie-text flex-column">
                 <h1>Frozen II</h1>
-                <p>Why was Elsa born with magical <br> powers? The answer is calling her and <br> threatening her
-                    kingdom. Watch
-                    it out.</p>
-                <div class="play-button">
-                    <p id="play"><a target="blank" href="https://youtu.be/Zi4LMpSDccc">play</a> </p>
+                <p>Why was Elsa born with magical powers? The answer is calling her and threatening her
+                    kingdom. Watch it out.</p>
+                <div>
+                    <a target="blank" href="https://youtu.be/Zi4LMpSDccc">
+                        <p id="play" class="button">Play</p>
+                    </a>
                 </div>
             </div>
-            <div class="movie-image">
-                <img src="http://i1.faceprep.in/prograd-junior/frozen-movie.png" alt="">
+            <div class="movie-image flex-column">
+                <img src="http://i1.faceprep.in/prograd-junior/frozen-movie.png" alt="frozen-image">
             </div>
-
         </div>
-        <br>
         <hr>
-
-        <div id="avengers" class="movie-container">
-            <div class="movie-image"><img src="http://i1.faceprep.in/prograd-junior/avengers-assemble.png" alt="">
+        <div class="flex-container movies">
+            <div class="movie-image flex-column"><img src="http://i1.faceprep.in/prograd-junior/avengers-assemble.png"
+                    alt="avengers-assembly-image">
             </div>
-            <div>
+            <div class="movie-text flex-column">
                 <h1>Avengers Assemble</h1>
-                <p>When Captain America is apparently <br> destroyed by Red Skull, Iron Man <br> re-unites the team.</p>
-                <div class="play-button">
-                    <p id="play"><a target="blank" href="https://youtu.be/aEnhSjwvOoY">play</a> </p>
+                <p>When Captain America is apparently destroyed by Red Skull, Iron Man re-unites the team.</p>
+                <div>
+                    <a target="blank" href="https://youtu.be/aEnhSjwvOoY">
+                        <p id="play" class="button">Play</p>
+                    </a>
                 </div>
             </div>
         </div>
-        <br>
         <hr>
-
-        <div id="onward" class="movie-container">
-
-            <div>
+        <div class="flex-container movies wrap-reverse">
+            <div class="movie-text flex-column">
                 <h1>Onward</h1>
-                <p>Onward is all about two teenage elf <br> brothers who go on a quest to discover <br> little magic
+                <p>Onward is all about two teenage elf brothers who go on a quest to discover little magic
                     left out
                     there</p>
-                <div class="play-button">
-                    <p id="play"><a target="blank" href="https://youtu.be/gn5QmllRCn4">play</a> </p>
+                <div>
+                    <a target="blank" href="https://youtu.be/gn5QmllRCn4">
+                        <p id="play" class="button">Play</p>
+                    </a>
                 </div>
             </div>
-            <div class="movie-image">
-                <img src="http://i1.faceprep.in/prograd-junior/onward.png" alt="">
+            <div class="movie-image flex-column">
+                <img src="http://i1.faceprep.in/prograd-junior/onward.png" alt="onward-image">
             </div>
         </div>
     </div>
-    <br>
     <hr>
-
-    <footer id="footer">
+    <footer class="flex-column">
         <p>Built by ProGrad Junior, Oliver 💗</p>
     </footer>
-
 </body>
 
 </html>
