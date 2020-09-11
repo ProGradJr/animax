@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Work+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+header {
+    background-image: url("http://i1.faceprep.in/prograd-junior/animax-bg.png");
+    background-size: 100% 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border: 8px solid #1B1717;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 7%;
+}
+
+.button {
+    background-color: #F50A5F;
+    padding: 7px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+header>div {
+    text-align: center;
+    margin: 5% 20%;
+    padding: 5%;
+}
+
+header>div>img {
+    width: 80px;
+}
+
+nav img {
+    height: 5vh;
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap is new concept canbe explained while discussing the mobile responsive webpage  */
+    flex-wrap: wrap;
+    min-height: 400px;
+    margin: 3% 12%;
+}
+
+.movie-image {
+    height: 270px;
+    width: 450px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.movie-image>img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Passion One', cursive;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+}
+
+.movie-container p {
+    margin-top: 20px;
+}
+
+hr {
+
+    color: #1B1717;
+    border: 4px solid #1B1717;
+}
+
+footer {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scroll {
+    position: relative;
+    animation: mymove 3s infinite;
+    animation-play-state: running;
+}
+
+
+
+@keyframes mymove {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 100px;
+    }
+}
+
+#play {
+    text-align: center;
+}
+
+.play-button {
+    background-color: #F50A5F;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/* mobile responsive the below code brings the play button below the image */
+@media only screen and (max-width: 600px) {
+    a {
+        font-size: 20px;
+    }
+
+
+
+    #frozen {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
+
+    #onward {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    #logo,
+    .button {
+        margin: 0% 5%;
+    }
+}
